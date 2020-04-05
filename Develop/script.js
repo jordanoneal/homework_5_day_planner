@@ -80,7 +80,7 @@ function createTimeBlock(currentIndex) {
 
     }
 
-    $(".saveBtn").on("click", function(event) {
+    $("#container-data").on("click", ".saveBtn", function(event) {
         event.preventDefault()
         storeTodos();
 
@@ -98,6 +98,12 @@ function createTimeBlock(currentIndex) {
     }
 
     function storeTodos() {
+        console.log(todos)
         localStorage.setItem("todos", JSON.stringify(todos));
-        console.log("it ran");
+    }
+
+    function updateList(theObj, currentTask) {
+        for (i= 0, i< todos.length; i++) {
+            
+        }
     }
