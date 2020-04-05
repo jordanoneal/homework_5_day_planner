@@ -101,9 +101,3 @@ function createTimeBlock(currentIndex) {
         console.log(todos)
         localStorage.setItem("todos", JSON.stringify(todos));
     }
-
-    function updateList(theObj, currentTask) {
-        for (i= 0, i< todos.length; i++) {
-            
-        }
-    }
